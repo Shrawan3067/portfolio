@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Simulator | My Portfolio</title>
+    <link rel="stylesheet" href="atm-simulator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+        </nav>
+    </header>
+
+    <main class="project-details">
+        <div class="project-hero">
+            <h1>ATM Simulator</h1>
+            <p class="subtitle">A Java-based console application simulating real ATM operations</p>
+            <div class="tags">
+                <span class="tag java">Java</span>
+                <span class="tag oop">OOP</span>
+                <span class="tag console">Console App</span>
+            </div>
+        </div>
+
+        <div class="project-content">
+            <div class="project-image-gallery">
+                <img src="login.png" alt="ATM Simulator Screenshot" class="active">
+                <div class="thumbnail-container">
+                    <img src="atm.png" alt="Thumbnail 1" class="thumbnail active">
+
+                </div>
+            </div>
+
+            <div class="project-info">
+                <section class="overview">
+                    <h2>Project Overview</h2>
+                    <p>A console-based ATM simulator built with Java, implementing core banking operations like withdrawals, deposits, balance checks, and PIN verification. Designed to demonstrate object-oriented programming (OOP) principles and file handling for persistent data storage.</p>
+                </section>
+
+                <section class="details">
+                    <div class="detail-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Technology</h3>
+                        <p>Java (JDK 17), File I/O, Object-Oriented Design</p>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-feather-alt"></i>
+                        <h3>Features</h3>
+                        <p>PIN auth, transaction history, account management</p>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Purpose</h3>
+                        <p>Academic project to master Java and OOP concepts</p>
+                    </div>
+                </section>
+
+                <section class="features">
+                    <h2>Key Functionalities</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Secure PIN-based authentication</li>
+                        <li><i class="fas fa-check-circle"></i> Deposit/withdraw funds with validation</li>
+                        <li><i class="fas fa-check-circle"></i> View transaction history</li>
+                        <li><i class="fas fa-check-circle"></i> Persistent data storage (text files)</li>
+                        <li><i class="fas fa-check-circle"></i> Error handling for invalid inputs</li>
+                    </ul>
+                </section>
+
+                <section class="code-highlights">
+                    <h2>Technical Highlights</h2>
+                    <div class="code-snippet">
+                        <pre><code>// Sample Java code for PIN verification
+public boolean verifyPin(int enteredPin) {
+    return this.pin == enteredPin;
+}</code></pre>
+                    </div>
+                </section>
+
+                <div class="project-actions">
+                    <button id="view-code" class="cta-button">
+                        <i class="fab fa-github"></i> View Source Code
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    
+<script>
+    // Image Gallery Functionality
+document.addEventListener('DOMContentLoaded', function() {
+const thumbnails = document.querySelectorAll('.thumbnail');
+const mainImage = document.querySelector('.project-image-gallery img.active');
+
+thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', function() {
+        // Remove active class from all thumbnails
+        thumbnails.forEach(t => t.classList.remove('active'));
+        
+        // Add active class to clicked thumbnail
+        this.classList.add('active');
+        
+        // Update main image
+        const newSrc = this.src.replace('-thumb', '');
+        mainImage.src = newSrc;
+    });
+});
+
+// View Prototype Button
+const viewBtn = document.getElementById('view-prototype');
+viewBtn.addEventListener('click', function() {
+    alert('Redirecting to patent documents...');
+    // In a real implementation, this would link to PDF/patent website
+    // window.location.href = 'patent-docs.pdf';
+});
+});
+
+// ATM Simulator Buttons
+document.getElementById('view-code').addEventListener('click', () => {
+    window.open('https://github.com/yourusername/atm-simulator', '_blank');
+});
+
+document.getElementById('view-demo').addEventListener('click', () => {
+    alert('Demo would launch a Java executable or terminal emulator in a real implementation.');
+});
+</script>
+</body>
+</html>
+
+
+
+

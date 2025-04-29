@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti Kumari | Java Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="atm-simulator.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Jyoti Kumari</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="jyoti_specialised_cv[1].pdf" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-details">
+        <div class="project-hero">
+            <h1>ATM Simulator</h1>
+            <p class="subtitle">A Java-based console application simulating real ATM operations</p>
+            <div class="tags">
+                <span class="tag java">Java</span>
+                <span class="tag oop">OOP</span>
+                <span class="tag console">Console App</span>
+            </div>
+        </div>
+
+        <div class="project-content">
+            <div class="project-image-gallery">
+                <img src="login.png" alt="ATM Simulator Screenshot" class="active">
+                <div class="thumbnail-container">
+                    <img src="atm.png" alt="Thumbnail 1" class="thumbnail active">
+
+                </div>
+            </div>
+
+            <div class="project-info">
+                <section class="overview">
+                    <h2>Project Overview</h2>
+                    <p>A console-based ATM simulator built with Java, implementing core banking operations like withdrawals, deposits, balance checks, and PIN verification. Designed to demonstrate object-oriented programming (OOP) principles and file handling for persistent data storage.</p>
+                </section>
+
+                <section class="details">
+                    <div class="detail-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Technology</h3>
+                        <p>Java (JDK 17), File I/O, Object-Oriented Design</p>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-feather-alt"></i>
+                        <h3>Features</h3>
+                        <p>PIN auth, transaction history, account management</p>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Purpose</h3>
+                        <p>Academic project to master Java and OOP concepts</p>
+                    </div>
+                </section>
+
+                <section class="features">
+                    <h2>Key Functionalities</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Secure PIN-based authentication</li>
+                        <li><i class="fas fa-check-circle"></i> Deposit/withdraw funds with validation</li>
+                        <li><i class="fas fa-check-circle"></i> View transaction history</li>
+                        <li><i class="fas fa-check-circle"></i> Persistent data storage (text files)</li>
+                        <li><i class="fas fa-check-circle"></i> Error handling for invalid inputs</li>
+                    </ul>
+                </section>
+
+                <section class="code-highlights">
+                    <h2>Technical Highlights</h2>
+                    <div class="code-snippet">
+                        <pre><code>// Sample Java code for PIN verification
+public boolean verifyPin(int enteredPin) {
+    return this.pin == enteredPin;
+}</code></pre>
+                    </div>
+                </section>
+
+                <div class="project-actions">
+                    <button id="view-code" class="cta-button">
+                        <i class="fab fa-github"></i> View Source Code
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">JK</a>
+                    <p>Building robust solutions with Java and modern technologies.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li><a href="#">Java Development</a></li>
+                        <li><a href="#">Selenium Testing</a></li>
+                        <li><a href="#">Object-Oriented Programming</a></li>
+                        <li><a href="#">Problem Solving</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Jyoti Kumari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    
+</body>
+</html>
